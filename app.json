@@ -6,8 +6,8 @@
         "RSS Feed",
         "Bot"
     ],
-    "repository": "https://github.com/viperadnan-git/rss-feed-telegram-bot",
-    "success_url": "https://github.com/magneto261290/rss-feed-telegram-bot",
+    "repository": "https://github.com/akshettrj/rss-feed-telegram-bot",
+    "success_url": "https://github.com/akshettrj/rss-feed-telegram-bot",
     "env": {
         "ENV": {
             "description": "idk",

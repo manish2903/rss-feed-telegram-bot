@@ -4,6 +4,10 @@ A bot to post messages to Telegram Groups or Channels from rss feed.
 bcoz bot can't read another bot's mag. So this bot will use your TG account to interact with mirror bot.
 Fill `STR_SESSION` and `MIRROR_CHAT_ID` vars to enable it.
 
+## Warning
+- This bot will work only when the rss feed is time-sorted (latest to oldest)
+- If its not time-sorted (e.g. some obtained from Jackett) then it will repeat a lot of items.
+
 ## Configuration
 - Edit the [rss.py](./rss.py) as your needs.
 - Edit values in [config.env](./config.env.template) or set it in Environment Variables. There is an template for `config.env` already exists just edit it and rename the file.
@@ -24,7 +28,7 @@ These variabls are required only if you want to use your tg account to send /mir
 - `MIRROR_CMD` - if you have changed default cmd of mirror bot, replace this.
 - `STR_SESSION` - String session generate using your tg mobile number for sending mirror cmd on your behalf. Generate by running
 ```
-python gen_str.py 
+python gen_str.py
 ```
 (heroku users run in heroku console)
 
